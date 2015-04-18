@@ -3,7 +3,6 @@ function createGrid(gridSize) {
       var $newdiv = $('<div>', {"class": "unit", text: ""});
       $('.container').append($newdiv);
   };
-  
   $('.unit').hover(function(){
       $(this).addClass('hover');
   });
@@ -12,7 +11,9 @@ function createGrid(gridSize) {
 createGrid(256)
 
 $('#button').click(function(){
-  $('.unit').removeClass('hover');
-  
-  var gridSize = prompt("What size grid would you like?");
+    var sideLength = prompt("A canvas is a square. What side length would you like?", 16);
+    var gridSize = (sideLength * sideLength);
+    $('.container').css('width', (sideLength * 20));
+    $('.container').empty();
+    createGrid(gridSize);
 });

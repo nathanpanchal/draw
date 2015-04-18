@@ -12,8 +12,11 @@ createGrid(256)
 
 $('#button').click(function(){
     var sideLength = prompt("A canvas is a square. What side length would you like?", 16);
-    var gridSize = (sideLength * sideLength);
-    $('.container').css('width', (sideLength * 20));
-    $('.container').empty();
-    createGrid(gridSize);
+
+    if (sideLength != null) {
+        var gridSize = (sideLength * sideLength);
+        $('.container').css('width', (sideLength * 20));
+        $('.container').empty();
+        createGrid(gridSize);
+    };
 });

@@ -1,15 +1,21 @@
+#button {
+  margin: 0 auto;
+  display: block;
+}
+
 .container {
-    width: 320px;    
+  width: 320px;
+  margin: 0 auto;  
 }
 
 .unit {
-    background-color: red;
-    height: 20px;
-    width: 20px;
-    clear: top;
-    display: inline-block;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  clear: top;
+  display: inline-block;
 }
 
 .hover {
-    background-color: blue;
+  background-color: blue;
 }

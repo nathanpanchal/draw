@@ -4,12 +4,16 @@ function createGrid(sideLength) {
     var $newdiv = $('<div>', {"class": "unit", text: ""});
     $('.container').append($newdiv);
   };
+};
+
+function changeColor() {
   $('.unit').hover(function(){
     $(this).addClass('hover');
   });
 };
 
-createGrid(16)
+createGrid(16);
+changeColor();
 
 $('#button').click(function(){
   var sideLength = prompt("A canvas is a square. What side length would you like?", 16);
@@ -18,5 +22,6 @@ $('#button').click(function(){
     $('.container').css('width', (sideLength * 20));
     $('.container').empty();
     createGrid(sideLength);
+    changeColor();
   };
 });

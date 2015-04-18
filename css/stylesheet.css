@@ -3,13 +3,55 @@
   display: block;
 }
 
+.color-picker {
+    background-color: grey;
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.colors {
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 10px auto;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+
 .container {
   width: 320px;
-  margin: 0 auto;  
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 .unit {
-  background-color: red;
+  background-color: white;
   height: 20px;
   width: 20px;
   clear: top;

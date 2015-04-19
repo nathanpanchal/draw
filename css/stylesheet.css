@@ -1,3 +1,7 @@
+body {
+  background-color: #2D2D2D;
+}
+
 #button {
   margin: 0 auto;
   display: block;
@@ -37,22 +41,25 @@
 }
 
 .green {
-    background-color: green;
+  background-color: green;
 }
 
 .blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 .purple {
-    background-color: purple;
+  background-color: purple;
 }
 
+.white {
+  background-color: white;
+}
 
 .container {
   width: 320px;
   margin: 0 auto;
-  border: 1px solid black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
 .unit {

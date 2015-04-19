@@ -8,19 +8,16 @@ function createGrid(sideLength) {
 
 function paint() {
   $('.unit').on('mouseover', function(){
-  console.log("Nathan")
   $(this).css('background-color', selectedColor);
   });
 };
 
+selectedColor = 'red'
 createGrid(16);
 paint()
 
-
-
 $('.colors').on('click', function() {
     selectedColor = $(this).data('color');
-    console.log(selectedColor)
 });
 
 $('#button').on('click', function(){

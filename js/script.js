@@ -6,18 +6,22 @@ function createGrid(sideLength) {
   };
 };
 
-function changeColor() {
+function paint() {
   $('.unit').on('mouseover', function(){
-    $(this).addClass('hover');
+  console.log("Nathan")
+  $(this).css('background-color', selectedColor);
   });
 };
 
+createGrid(16);
+paint()
+
+
+
 $('.colors').on('click', function() {
     selectedColor = $(this).data('color');
+    console.log(selectedColor)
 });
-
-createGrid(16);
-changeColor();
 
 $('#button').on('click', function(){
   var sideLength = prompt("A canvas is a square. What side length would you like?", 16);
@@ -26,6 +30,6 @@ $('#button').on('click', function(){
     $('.container').css('width', (sideLength * 20));
     $('.container').empty();
     createGrid(sideLength);
-    changeColor();
+    paint()
   };
 });

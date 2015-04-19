@@ -7,15 +7,19 @@ function createGrid(sideLength) {
 };
 
 function changeColor() {
-  $('.unit').hover(function(){
+  $('.unit').on('mouseover', function(){
     $(this).addClass('hover');
   });
+};
+
+function selectColor() {
+  colorSelected = red
 };
 
 createGrid(16);
 changeColor();
 
-$('#button').click(function(){
+$('#button').on('click', function(){
   var sideLength = prompt("A canvas is a square. What side length would you like?", 16);
 
   if (sideLength != null) {

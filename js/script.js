@@ -12,9 +12,9 @@ function changeColor() {
   });
 };
 
-function selectColor() {
-  colorSelected = red
-};
+$('.colors').on('click', function() {
+    selectedColor = $(this).data('color');
+});
 
 createGrid(16);
 changeColor();

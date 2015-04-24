@@ -7,12 +7,15 @@ body {
   display: block;
 }
 
+.selected-color {
+  height: 20px;
+  width: 210px;
+  background-color: red;
+}
+
 .color-palette {
     height: 100%;
-    width: 220px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 210px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
@@ -27,35 +30,7 @@ body {
     box-shadow: none;
 }
 
-.red {
-    background-color: red;
-}
-
-.orange {
-    background-color: orange;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.purple {
-  background-color: purple;
-}
-
-.white {
-  background-color: white;
-}
-
-.container {
+.grid-container {
   width: 320px;
   margin: 0 auto;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);

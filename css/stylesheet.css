@@ -7,7 +7,7 @@ body {
   display: block;
 }
 
-.color-picker {
+.color-palette {
     height: 100%;
     width: 220px;
     position: fixed;

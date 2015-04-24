@@ -15,7 +15,7 @@ function paint() {
 };
 
 // initialize the grid and default color when app is run
-selectedColor = 'red'
+selectedColor = '#FF1B1B'
 createGrid(16);
 paint()
 

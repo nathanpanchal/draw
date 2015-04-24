@@ -20,7 +20,7 @@ body {
     display: inline-block;
     height: 20px;
     width: 20px;
-    margin: 1px;
+    margin: .5px;
 }
 
 .colors:hover {

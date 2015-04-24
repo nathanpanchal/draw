@@ -1,3 +1,4 @@
+// create a square gird based on a given side length
 function createGrid(sideLength) {
   var gridSize = (sideLength * sideLength);
   for (var i = 0; i < gridSize; i++) {
@@ -6,20 +7,24 @@ function createGrid(sideLength) {
   };
 };
 
+// color the elements in the grid
 function paint() {
   $('.unit').on('mouseover', function(){
   $(this).css('background-color', selectedColor);
   });
 };
 
+// initialize the grid and default color when app is run
 selectedColor = 'red'
 createGrid(16);
 paint()
 
+// select a color from the palette
 $('.colors').on('click', function() {
     selectedColor = $(this).data('color');
 });
 
+// clear and update canvas size
 $('#button').on('click', function(){
   var sideLength = prompt("A canvas is a square. What side length would you like?", 16);
 

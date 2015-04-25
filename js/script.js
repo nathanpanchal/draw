@@ -7,8 +7,8 @@ function createGrid(sideLength) {
   };
 };
 
-// color the elements in the grid
-function paint() {
+// adds a js listener to each element with the class ".unit"
+function paintable() {
   $('.unit').on('mouseover', function(){
   $(this).css('background-color', selectedColor);
   });
@@ -17,7 +17,7 @@ function paint() {
 // initialize the grid and default color when app is run
 selectedColor = '#FF1B1B'
 createGrid(16);
-paint()
+paintable()
 
 // select a color from the palette
 $('.colors').on('click', function() {
@@ -29,9 +29,11 @@ $('#button').on('click', function(){
   var sideLength = prompt("A canvas is a square. What side length would you like?", 16);
 
   if (sideLength != null) {
-    $('.grid-container').css('width', (sideLength * 20));
+    // removes the div elements in the grid container
     $('.grid-container').empty();
+    // updates the width of the container to suit the newly specified sidelength
+    $('.grid-container').css('width', (sideLength * 20));
     createGrid(sideLength);
-    paint()
+    paintable()
   };
 });

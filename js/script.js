@@ -14,6 +14,11 @@ function paintable() {
   });
 };
 
+// change the background of the indicator element to match the currently selected color
+function colorIndicator(selectedColor) {
+  $(".selected-color").removeClass("background-color").css("background-color", selectedColor)
+};
+
 // initialize the grid and default color when app is run
 selectedColor = '#FF1B1B'
 createGrid(16);
@@ -21,7 +26,8 @@ paintable()
 
 // select a color from the palette
 $('.colors').on('click', function() {
-    selectedColor = $(this).data('color');
+  selectedColor = $(this).data('color');
+  colorIndicator(selectedColor)
 });
 
 // clear and update canvas size

@@ -22,7 +22,6 @@ body {
 }
 
 .color-palette {
-  height: 100%;
   width: 210px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }

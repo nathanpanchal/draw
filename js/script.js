@@ -23,6 +23,7 @@ function colorIndicator(selectedColor) {
 selectedColor = '#FF1B1B'
 createGrid(16);
 paintable()
+colorIndicator(selectedColor)
 
 // select a color from the palette
 $('.colors').on('click', function() {

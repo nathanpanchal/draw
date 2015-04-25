@@ -7,6 +7,8 @@ function createGrid(sideLength) {
   };
 };
 
+// add new function for creating an intial container. It is currently to difficult to change the res.
+
 // adds a js listener to each element with the class ".unit"
 function paintable() {
   $('.unit').on('mouseover', function(){

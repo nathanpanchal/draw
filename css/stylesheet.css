@@ -17,13 +17,13 @@ body {
 
 .selected-color {
   height: 20px;
-  width: 210px;
   background-color: red;
 }
 
 .color-palette {
   width: 210px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  background-color: #2b2b2b;
 }
 
 .colors {
